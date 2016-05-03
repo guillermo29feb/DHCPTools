@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/IdentifyingServerRogue.iml" filepath="$PROJECT_DIR$/.idea/IdentifyingServerRogue.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/DHCPTools/.idea/DHCPTools.iml" filepath="$USER_HOME$/PycharmProjects/DHCPTools/.idea/DHCPTools.iml" />
     </modules>
   </component>
 </project>
